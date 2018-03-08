@@ -13,7 +13,7 @@ public int minimumOfTwo(int Var1, int Var2)
 */
 public int minimumOfThree(int Var1, int Var2, int Var3)
 {
-	return minimumOfTwo(Var1,minimumOfTwo(Var2,Var3));
+	return Math.min(Var1,Math.min(Var2,Var3));
 }
 
 /*
@@ -31,30 +31,30 @@ public int maximumOfTwo(int Var1, int Var2)
 */
 public int maximumOfThree(int Var1, int Var2, int Var3)
 {
-		return maximumOfTwo(Var1,maximumOfTwo(Var2,Var3));
+		return Math.max(Var1,Math.max(Var2,Var3));
 
 }
 
 /*
-* Calculate the maximum value from an array values
+* Calculate the maximum value from an array
 */
 public int maximumOfArray(int[] Var1)
 {
 		int maxValue = Var1[0];
 		for(int i=1;i < Var1.length;i++){
-		maxValue=maximumOfTwo(maxValue,Var1[i]);
+		maxValue=Math.max(maxValue,Var1[i]);
 		}
 		return maxValue;
 		}
 
 /*
-* Calculate the minimum value from an array values
+* Calculate the minimum value from an array
 */
 public int minimumOfArray(int[] Var1)
 {
 		int minValue = Var1[0];
 		for(int i=1;i < Var1.length;i++){
-			minValue=minimumOfTwo(minValue,Var1[i]);
+			minValue=Math.min(minValue,Var1[i]);
 		}
 		return minValue;
 		}
@@ -73,7 +73,7 @@ public int sumOfTwo(int Var1, int Var2)
 */
 public int sumOfThree(int Var1, int Var2, int Var3)
 {
-	return sumOfTwo(Var1,sumOfTwo(Var2,Var3));
+	return Var1+Var2+Var3;
 }
 
 /*
@@ -83,7 +83,7 @@ public int sumOfArray(int[] Var1)
 {
 		int sum=0;
 		for(int i=1;i < Var1.length;i++){
-			sum=sumOfTwo(sum,Var1[i]);
+			sum=sum+Var1[i];
 		}
 		return sum;
 }
@@ -109,7 +109,7 @@ public int mul(int Var1, int Var2)
 */
 public int mul(int Var1, int Var2, int Var3)
 {
-	return mul(Var1,mul(Var2,Var3))
+	return Var1*Var2*Var3;
 }
 
 /*
@@ -118,9 +118,8 @@ public int mul(int Var1, int Var2, int Var3)
 public int mul(int[] Var1)
 {
 		int var2=Var1[0]
-		int var3=1;
 		for(int i=1;i < Var1.length;i++){
-		var3=mul(var2,Var1[i]);
+		var2=var2*Var1[i];
 		}
 	return var3
 }
@@ -130,11 +129,7 @@ public int mul(int[] Var1)
 */
 public int pow(int Var1, int Var2)
 {
-		int var3=Var1;
-		for(int i=0;i < Var2;i++){
-		  var3=mul(var3,Var1);
-		}
-	return var3;
+	return Math.pow(Var1,Var2);
 }
 
 /*
@@ -143,7 +138,7 @@ public int pow(int Var1, int Var2)
 public double abs(double Var1)
 {
 		if(Var1 < 0){
-		return neg(Var1);
+		return -Var1;
 		}else{
 		return Var1;
 		}
@@ -154,11 +149,7 @@ public double abs(double Var1)
 */
 public float abs(float Var1)
 {
-		if(Var1 < 0){
-		return neg(Var1);
-		}else{
-		return Var1;
-		}
+		return Math.abs(Var1);
 }
 
 /*
@@ -166,11 +157,7 @@ public float abs(float Var1)
 */
 public int abs(int Var1)
 {
-		if(Var1 < 0){
-		return neg(Var1);
-		}else{
-		return Var1;
-		}
+		return Math.abs(Var1);
 }
 
 /*
@@ -178,11 +165,7 @@ public int abs(int Var1)
 */
 public long abs(long Var1)
 {
-		if(Var1 < 0){
-		return neg(Var1);
-		}else{
-		return Var1;
-		}
+		Math.abs(Var1);
 }
 
 /*
@@ -222,7 +205,7 @@ public int isEven(int Var1)
 */
 public int isOdd(int Var1)
 {
-	return !isEven(Var1);
+		return (Var1 % 2 == 1);
 }
 
 /**
@@ -238,7 +221,7 @@ public boolean isDivide(int Var1,int Var2){
 public boolean isPrime(int Var1)
 {
 		for(int i=2;i<n;i++) {
-		if(isDivide(n,i))
+		if(n%i==0){
 		return false;
 		}
 		return true;
@@ -309,7 +292,7 @@ public long floor(double Var1)
 */
 public long roundDown(double Var1)
 {
-	return floor(Var1);
+	return Math.floor(Var1);
 }
 
 /*
@@ -317,7 +300,7 @@ public long roundDown(double Var1)
 */
 public long roundUp(double Var1)
 {
-	return floor(Var1+1);
+	return Math.floor(Var1+1);
 }
 
 /*
@@ -361,7 +344,7 @@ public boolean equals(float Var1, float Var2)
 */
 public boolean equals(float Var1, float Var2, float Var3)
 {
-		return equals(Var1,Var2)&&equals(Var2,Var3));
+		return (Var1==Var2)&&(Var2==Var3);
 }
 
 /*
@@ -369,7 +352,7 @@ public boolean equals(float Var1, float Var2, float Var3)
 */
 public boolean equals(int Var1, int Var2, int Var3)
 {
-		return equals(Var1,Var2)&&equals(Var2,Var3));
+		return (Var1==Var2)&&(Var2==Var3);
 }
 
 /*
