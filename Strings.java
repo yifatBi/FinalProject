@@ -65,7 +65,7 @@ public boolean equalsIgnoreCase(String Var1, String Var2)
 */
 public boolean equalsIgnoreCase(String Var1, String Var2)
 		{
-		return Var1.equalsIgnoreCase(Var2);
+		return Var1.equalsIgnoreCase(Var2) && Var1.equalsIgnoreCase(Var3);
 		}
 
 /*
