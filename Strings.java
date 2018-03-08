@@ -180,11 +180,12 @@ public String trim(String Var1)
 	return Var1.replace(" ","")
 }
 
-/*
-* Returns the char value at the specified index
-*/
-public char charAt(String Var1, int Var2)
-{
-	return Var1.charAt(Var2);
-}
+
+/**
+ * Returns the string representation of the int argument.
+ */
+public String parseInt(int Var1)
+		{
+		return String.valueOf(Var1);
+		}
 
