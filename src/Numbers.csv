@@ -1,0 +1,39 @@
+Calculate the minimum value from 2 values,minimumOfTwo,int,2,int
+Calculate the minimum value from 3 values,minimumOfThree,int,3,int
+Calculate the maximum value from 2 values,maximumOfTwo,int,2,int
+Calculate the maximum value from 3 values,maximumOfThree,int,3,int
+Calculate the maximum value from an array values,maximumOfArray,int,1,Array
+Calculate the minimum value from an array values,minimumOfArray,int,1,Array
+sum of 2 numbers,sumOfTwo,int,2,int
+sum of 3 numbers,sumOfThree,int,3,int
+sum of Array,sumOfArray,Array,1,int
+Subtraction of two numbers,sub,int,2,int
+Multiply of 2 numbers,mul,int,2,int
+Multiply of 3 numbers,mul,int,3,int
+Multiply of array values,mul,int,1,Array
+The method returns the value of the first argument raised to the power of the second argument,pow,double,2,double
+Returns the absolute value of a double value,abs,double,1,double
+Returns the absolute value of a float value,abs,float,1,float
+Returns the absolute value of a int value,abs,int,1,int
+Returns the absolute value of a long value,abs,long,1,long
+Return the division of first argument in the second one,double,2,int
+This method returns the positive square root,sqrt,double,1,double
+The remainder in a division,mod,double,2,double
+Check if the number is even,isEven,int,1,int
+Check if the number is odd,isOdd,int,1,int
+Check if the number is prime number,isPrime,int,1,int
+compare between 2 int numbers,Comperator,int,2,int
+compare between 2 float numbers,Comperator,float,2,float
+compare between 2 double numbers,Comperator,double,2,double
+Returns the closest int to the argument, with ties rounding to positive infinity,round,int,1,float
+Returns the closest long to the argument, with ties rounding to positive infinity,round,long,1,double
+Returns the closest long to the argument, with down rounding to positive infinity,floor,long,1,double
+Returns the closest long to the argument, with down rounding to positive infinity,roundDown,long,1,double
+Returns the closest long to the argument, with up rounding to positive infinity.,roundUp,long,1,double
+Return the negative value of the parameter,neg,int,1,int
+Returns a double value with a positive sign greater than or equal to 0 and less than 1,random,double,0
+check if the two int value equals,equals,boolean,2,int
+check if the two float value equals,equals,boolean,2,float
+check if the three float value equals,equals,boolean,3,float
+check if the three int value equals,equals,boolean,3,int
+The method is used to get a String object representing the value of the Number Object,toString, String,1,int
