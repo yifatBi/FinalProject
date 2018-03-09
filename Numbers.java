@@ -121,7 +121,7 @@ public int mul(int[] Var1)
 		for(int i=1;i < Var1.length;i++){
 		var2=var2*Var1[i];
 		}
-	return var3
+	return var2
 }
 
 /*
