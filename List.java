@@ -71,7 +71,7 @@ public boolean isEmpty(List Var1)
 }
 
 /*
-* Returns if this list contains elements.
+* Returns if this list has elements.
 */
 public boolean has(List Var1)
 {
@@ -116,8 +116,8 @@ public List sublist(List Var1, int Var2)
 public int minValue(List Var1)
 {
 	int var2=Var1.get(0);
-	for(int var3=1;var3<Var1.size();var3++){
-		var2=Math.min(var2,Var1.get(var3));
+	for(int var3 : Var1){
+		var2=Math.min(var2,var3);
 		}
 		return var2;
 }
@@ -128,8 +128,8 @@ public int minValue(List Var1)
 public int maxValue(List Var1)
 {
 		int var2=Var1.get(0);
-		for(int var3=1;var3<Var1.size();var3++){
-		var2=Math.max(var2,Var1.get(var3));
+		for(int var3 : Var1){
+		var2=Math.max(var2,var3);
 		}
 		return var2;
 }
@@ -139,9 +139,9 @@ public int maxValue(List Var1)
 */
 public int sum(List Var1)
 {
-		int var2=Var1.get(0);
-		for(int var3=1;var3<Var1.size();var3++){
-			var2+=Var1.get(var3);
+		int var2=0);
+		for(int var3 : Var1){
+			var2 += var3;
 		}
 		return var2;
 }
@@ -151,9 +151,9 @@ public int sum(List Var1)
 */
 public int mul(List Var1)
 {
-		int var2=Var1.get(0);
-		for(int var3=1;var3<Var1.size();var3++){
-		var2=var2 * (Var1.get(var3));
+		int var2=1;
+		for(int var3:Var1){
+		var2=var2 * var3);
 		}
 		return var2;
 }
@@ -168,7 +168,7 @@ public void clear(List Var1)
 
 
 /*
-* Appends the specified element to the end of this list
+* Appends the element to the list
 */
 public boolean add(List Var1, Object Var2)
 {
