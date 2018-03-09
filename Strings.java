@@ -12,19 +12,13 @@ public char charAt(String Var1, int Var2)
 */
 public boolean endsWith(String Var1, String Var2)
 {
-		int Var3=Var1.length()-Var2.length()-1;
-		for(int i=0;i<Var2.length();i++){
-			if(Var2[i]!=Var1[Var3+i]){
-			return false;
-			}
-		}
-	return true;
+	return Var1.endsWith(Var2);
 }
 
 /*
 * Concatenates the second string argument to the end of the first string argument
 */
-public string concat(string Var1, string Var2)
+public string concat(String Var1, String Var2)
 {
 	return Var1.concat(Var2);
 }
@@ -103,10 +97,26 @@ public int lastIndexOf(String Var1,char Var2)
 /*
 * Returns the index within this string of the last occurrence of the specified substring
 */
-public int lastIndexOf(string Var1,String Var2)
+public int lastIndexOf(String Var1,String Var2)
 {
 		return Var1.lastIndexOf(Var2);
 }
+
+/*
+* Returns the index within this string of the first occurrence of the specified character
+*/
+public int firstIndexOf(String Var1,char Var2)
+		{
+		return Var1.indexOf(Var2);
+		}
+
+/*
+* Returns the index within this string of the first occurrence of the specified substring
+*/
+public int firstIndexOf(String Var1,String Var2)
+		{
+		return Var1.indexOf(Var2);
+		}
 
 /*
 * Returns the length of this string
@@ -188,4 +198,24 @@ public String parseInt(int Var1)
 		{
 		return String.valueOf(Var1);
 		}
+/**
+ * Compares two strings lexicographically
+ */
+public int compareTo(String Var1,String Var2){
+		return Var1.compareTo(Var2);
+}
+/**
+ * Compares two strings lexicographically ignoring case differences
+ */
+public int compareToIgnoreCase(String Var1,String Var2){
+		return Var1.toLowerCase().compareTo(Var2.toLowerCase());
+}
+/**
+ * Returns the length of the trimmed string.
+ */
+public int trimLength(String Var1)
+{
+		return Var1.trim().length();
+}
+
 
